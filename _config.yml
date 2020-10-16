@@ -88,7 +88,7 @@ analytics:
   provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : "UA-180686045-1"
-    anonymize_ip         : # true, false (default)
+    anonymize_ip         : true
 
 
 # Site Author
@@ -170,8 +170,6 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
@@ -257,6 +255,13 @@ tag_archive:
    #category: /categories/:name/
    #tag: /tags/:name/
 
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  What-is-the-blockchain:
+    output: true
+    permalink: /:collection/:path/
 
 # HTML Compression
 # - https://jch.penibelst.de/
@@ -265,9 +270,9 @@ compress_html:
   ignore:
     envs: development
 
-
 # Defaults
 defaults:
+#projects
   # _posts
   - scope:
       path: ""
@@ -277,6 +282,26 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
-      share: false
+      share: true
       related: true
-      show_date: true
+ # _projects
+ - scope:
+     path: ""
+     type: projects
+   values:
+     layout: single
+     author_profile: false
+     comments: true
+     share: false
+     related: true
+
+  # _What-is-the-blockchain
+  - scope:
+      path: ""
+      type: What-is-the-blockchain
+    values:
+      layout: single
+      author_profile: false
+      comments: true
+      share: true
+      related: true
