@@ -2,7 +2,7 @@
 title: Edge Case
 layout: category
 permalink: /categories/edge-case/
-taxonomy: Edge Case
+taxonomy: projects cyworld
 ---
 
-Sample post listing for the category `Edge Case`.
+Sample post listing for the category `projects cyworld`.
