@@ -1,57 +1,28 @@
 # main links
 main:
-  - title: "Projects"
-    url: /categories/#daylife
   - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+    url: /about
+  - title: "Articles"
+    url: /categories/articles
+  - title: "Projects"
+    url: /categories/projects
+  - title: "Daylife"
+    url: /categories/daylife
 
-docs:
-  - title: Getting Started
+Articles:
+  - title: Articles
     children:
-      - title: "Quick-Start Guide"
+      - title: "What is the blockchain?"
+        url: /What-is-the-blockchain/
+
+Projects:
+  - title: Projects
+    children:
+      - title: "카카오톡 저장기간 만료 파일 복구"
         url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
 
-  - title: Customization
+what-is-the-blockchain:
+  - title: 서론
     children:
-      - title: "Configuration"
-        url: /docs/configuration/
-      - title: "Navigation"
-        url: /docs/navigation/
-      - title: "UI Text"
-        url: /docs/ui-text/
-      - title: "Authors"
-        url: /docs/authors/
-      - title: "Layouts"
-        url: /docs/layouts/
-
-  - title: Content
-    children:
-      - title: "Working with Posts"
-        url: /docs/posts/
-      - title: "Working with Pages"
-        url: /docs/pages/
-      - title: "Working with Collections"
-        url: /docs/collections/
-      - title: "Helpers"
-        url: /docs/helpers/
-      - title: "Utility Classes"
-        url: /docs/utility-classes/
-
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
-      - title: "JavaScript"
-        url: /docs/javascript/
+      - title: 1) 블록체인과 탈 탈중앙화
+        url: /What-is-the-blockchain/01-Block-chain-and-decentralize/

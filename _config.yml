@@ -94,8 +94,8 @@ analytics:
 # Site Author
 author:
   name             : "Minsung Son"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Let's make **perhaps** into **be**.  Bperhaps"
+  avatar           : "/assets/images/profile/me.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Let's make **perhaps** into **be**.   Bperhaps"
   location         : "South Korea"
   email            : "sns2831@gmail.com"
   links:
@@ -170,6 +170,7 @@ exclude:
   - Rakefile
   - README
   - tmp
+  - docs
 keep_files:
   - .git
   - .svn
@@ -279,29 +280,8 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
       share: true
-      related: true
- # _projects
- - scope:
-     path: ""
-     type: projects
-   values:
-     layout: single
-     author_profile: false
-     comments: true
-     share: false
-     related: true
-
-  # _What-is-the-blockchain
-  - scope:
-      path: ""
-      type: What-is-the-blockchain
-    values:
-      layout: single
-      author_profile: false
-      comments: true
-      share: true
-      related: true
+      classes: wide

@@ -1,6 +1,8 @@
 ---
-title: "Posts by Category"
+title: "Bperhaps의 게시물"
 layout: categories
-permalink: /category/
-author_profile: true
+permalink: /categories/
+author_profile: false
+sidebar:
+  nav: "posts"
 ---
