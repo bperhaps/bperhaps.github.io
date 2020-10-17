@@ -57,7 +57,37 @@ HXD를 이용해 파일들을 열어보니 파일 시그니처가 해당 파일�
 물론, 사진 동영상의 시그니처만 처리하고 나머지는 예외처리시켜버리면 라이브러리를 쓰지 않고도 충분히 가능하긴 하지만.. 그건 성격상 안맞기도 하고 (귀찮..) 그냥 라이브러리를 사용하기로 했다.
 사용한 라이브러리는 python-magic이다.
 
+```
+# -*- coding: cp949 -*-
 
+import sys
+import os
+import time
+import shutil
+import magic
+
+
+# Referenced from "https://wikidocs.net/39"
+def search(dirname):
+    filenames = os.listdir(dirname)
+    for filename in filenames:
+        full_filename = os.path.join(dirname, filename)
+        if os.path.isdir(full_filename):
+            search(full_filename)
+        else:
+            path = time.strftime("%Y.%m.%d" , time.localtime(os.path.getmtime(full_filename)))
+            extention = magic.from_file(full_filename, mime=True).split("/")[1]
+
+            if not os.path.exists("./result/" + path):
+                os.mkdir("./result/" + path)
+
+            shutil.copy(full_filename, "./result/" + path + "/" + filename + "." + extention)     
+
+if not os.path.exists("result"):
+    os.mkdir("result");
+
+search("/mnt/g/com.kakao.talk/contents")
+```
 
 
 {:refdef: style="text-align: center;"}

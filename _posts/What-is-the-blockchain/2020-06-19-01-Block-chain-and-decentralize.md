@@ -1,6 +1,6 @@
 ---
 title: "1) 블록체인과 탈 중앙화"
-date: 2020-06-19 01:59:00 -0400
+date: 2020-06-19 01:59:00 +0900
 categories: article What-is-the-blockchain
 tags: blockchain decentralize  블록체인  탈중앙화
 sidebar:
