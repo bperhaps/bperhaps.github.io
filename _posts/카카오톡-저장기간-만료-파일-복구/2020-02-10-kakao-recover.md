@@ -3,8 +3,6 @@ title: "카카오톡 저장기간 만료 파일 복구"
 date: 2018-02-10 05:28:00 +0900
 categories: project kakaotalk-recover
 tags: kakaotalk
-sidebar:
-  nav: "projects"
 ---
 
 카카오톡으로 사진들을 주고받다 보면 저장기간이 만료되서 사진을 다운로드 하지 못하는 경우가 있다.

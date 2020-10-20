@@ -6,8 +6,8 @@ main:
     url: /categories/articles
   - title: "Projects"
     url: /categories/projects
-  - title: "Daylife"
-    url: /categories/daylife
+  - title: "Studies"
+    url: /categories/studies
 
 Articles:
   - title: Articles
@@ -15,11 +15,12 @@ Articles:
       - title: "What is the blockchain?"
         url: /What-is-the-blockchain/
 
-Projects:
-  - title: Projects
+Studies:
+  - title: Studies
     children:
-      - title: "카카오톡 저장기간 만료 파일 복구"
-        url: /docs/quick-start-guide/
+      - title: java
+        url: /
+      - blockchain
 
 what-is-the-blockchain:
   - title: 서론
