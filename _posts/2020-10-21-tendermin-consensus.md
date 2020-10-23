@@ -1,3 +1,11 @@
+---
+title: "텐더민트 백서 정리"
+date: 2020-10-23 08:33:00 +0900
+categories: blockchain consensus
+tags: blockchain consensus tendermint whitepaper
+toc: true
+---
+
 ### Tendermint
 
 #### Entities
